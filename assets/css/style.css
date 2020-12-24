@@ -39,6 +39,7 @@ body {
 /* Ex porcodio */
 .home-text {
     float: left;
+    width: 60%;
 }
 
 nav {
@@ -98,6 +99,7 @@ p {
 }
 
 .kaguya {
+    flex: 1;
     width: 25%;
     height: 100%;
     flex-shrink: 0;
