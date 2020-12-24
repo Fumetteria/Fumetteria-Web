@@ -1,30 +1,49 @@
 <!DOCTYPE html>
-<html lang="it-IT">
+<html>
     <head>
+        <title>W.I.P.</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Homepage of Fumetteria's official website.">
-        <title>Fumetteria | W.I.P.</title>
-        <link href="assets/css/style.css" rel="stylesheet">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158624522-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-158624522-1');
-        </script>
+        <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
-        <h1 class="main-title">Il sito è W.I.P. (ancora per poco lmao)</h1>
-        <img class="heavy-gif" src="assets/img/heavy.gif" width=250 height=200 alt="orange justice but it's heavy">
-        <footer id="main-footer">
-            <div class="footer-text">
-                <h4>Contatti</h4>
-                <p>E-Mail: <a href="mailto:satoscio65@gmail.com">satoscio65@gmail.com</a></p>
-                <p>Telegram: <a href="https://telegram.me/satoscio">Satoscio</a></p>
-                <p>Chi sono: <a href="sato.html">sono proprio io</a></p>
+        <div id="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><!--<a href="contatti">-->Contatti (wip)<!--</a>--></li>
+                    <li><!--<a href="extra">-->Extra (wip)<!--</a>--></li>
+                </ul>
+            </nav>
+            <div class="home-text">
+                <h1 id="welcome">Benvenuto!</h1>
+                <script>
+                    function textLoop() {
+                        $("#welcome").delay(1000).fadeOut(function() {
+                            $(this).text("Welcome!")
+                        }).fadeIn();
+                        $("#welcome").delay(1000).fadeOut(function() {
+                            $(this).text("ようこそ！")
+                        }).fadeIn();
+                        $("#welcome").delay(1000).fadeOut(function() {
+                            $(this).text("Benvenuto!")
+                        }).fadeIn();
+                    }
+                    var interval = self.setInterval(function(){textLoop()})
+                </script>
+                <h2>Benvenuti nel sito"della Fumetteria!</h2>
+                <p>
+                    Cos'è questo sito?
+                    <br>Per adesso non è niente di speciale, penso di metterci qualcosa in futuro.
+                    <br>Intanto tengo questo sito che sicuramente è meglio di quella merda accecante.
+                    <br>Sì, pago 15 euro all'anno per un dominio che uso raramente.
+                </p>
+                <img class="exentio" src="assets/img/lmao.png">
             </div>
-        </footer>
+            <!-- bg: https://chan.sankakucomplex.com/post/show/21030560 -->
+            <img class="kaguya" src="assets/img/kaguya2.png">
+        </div>
     </body>
 </html>
