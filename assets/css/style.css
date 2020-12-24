@@ -20,7 +20,7 @@ time, mark, audio, video {
 }
 
 body {
-    background-image: url('assets/img/bg2.jpg');
+    background-image: url('../img/bg2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
    }
